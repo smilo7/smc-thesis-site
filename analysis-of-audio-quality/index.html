@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis of Audio Quality in Neural-Codec Generative Systems</title>
+<style>
+  body { max-width: 900px; margin: 2rem auto; padding: 0 1rem 4rem;
+         font-family: sans-serif; line-height: 1.6; }
+  img { width: 100%; height: auto; }
+  table { border-collapse: collapse; margin-top: 1rem; }
+  td { padding: 0.2rem 0.8rem 0.2rem 0; vertical-align: middle; }
+  td.name { white-space: nowrap; }
+  h2 { margin-top: 3rem; }
+</style>
+</head>
+<body>
+
+<p><a href="../index.html">Back</a></p>
+
+<h1>Analysis of Audio Quality in Neural-Codec Generative Systems</h1>
+
+
+<h2>Logarithmic sine sweep</h2>
+
+<img src="figures/sine_sweep_spectrogram.png"
+     alt="Spectrograms of a sine sweep and its EnCodec reconstructions">
+
+<table>
+  <tr><td class="name">Input</td>
+      <td><audio controls preload="none" src="audio/sweep__input.wav"></audio></td></tr>
+  <tr><td class="name">1.5 kbps</td>
+      <td><audio controls preload="none" src="audio/sweep__1.5kbps.wav"></audio></td></tr>
+  <tr><td class="name">3 kbps</td>
+      <td><audio controls preload="none" src="audio/sweep__3kbps.wav"></audio></td></tr>
+  <tr><td class="name">6 kbps</td>
+      <td><audio controls preload="none" src="audio/sweep__6kbps.wav"></audio></td></tr>
+  <tr><td class="name">12 kbps</td>
+      <td><audio controls preload="none" src="audio/sweep__12kbps.wav"></audio></td></tr>
+  <tr><td class="name">24 kbps</td>
+      <td><audio controls preload="none" src="audio/sweep__24kbps.wav"></audio></td></tr>
+</table>
+
+
+<h2>1 kHz sine tone</h2>
+
+<img src="figures/sine_tone_spectrogram.png"
+     alt="Spectrograms of a 1 kHz tone and its EnCodec reconstructions">
+
+<table>
+  <tr><td class="name">Input</td>
+      <td><audio controls preload="none" src="audio/tone1k__input.wav"></audio></td></tr>
+  <tr><td class="name">1.5 kbps</td>
+      <td><audio controls preload="none" src="audio/tone1k__1.5kbps.wav"></audio></td></tr>
+  <tr><td class="name">3 kbps</td>
+      <td><audio controls preload="none" src="audio/tone1k__3kbps.wav"></audio></td></tr>
+  <tr><td class="name">6 kbps</td>
+      <td><audio controls preload="none" src="audio/tone1k__6kbps.wav"></audio></td></tr>
+  <tr><td class="name">12 kbps</td>
+      <td><audio controls preload="none" src="audio/tone1k__12kbps.wav"></audio></td></tr>
+  <tr><td class="name">24 kbps</td>
+      <td><audio controls preload="none" src="audio/tone1k__24kbps.wav"></audio></td></tr>
+  <tr><td class="name">No quantiser</td>
+      <td><audio controls preload="none" src="audio/tone1k__unquantised.wav"></audio></td></tr>
+</table>
+
+
+<h2>White noise</h2>
+
+<img src="figures/noise_white_spectrogram.png"
+     alt="Spectrograms of white noise and its EnCodec reconstructions">
+
+<table>
+  <tr><td class="name">Input</td>
+      <td><audio controls preload="none" src="audio/noise_white__input.wav"></audio></td></tr>
+  <tr><td class="name">1.5 kbps</td>
+      <td><audio controls preload="none" src="audio/noise_white__1.5kbps.wav"></audio></td></tr>
+  <tr><td class="name">3 kbps</td>
+      <td><audio controls preload="none" src="audio/noise_white__3kbps.wav"></audio></td></tr>
+  <tr><td class="name">6 kbps</td>
+      <td><audio controls preload="none" src="audio/noise_white__6kbps.wav"></audio></td></tr>
+  <tr><td class="name">12 kbps</td>
+      <td><audio controls preload="none" src="audio/noise_white__12kbps.wav"></audio></td></tr>
+  <tr><td class="name">24 kbps</td>
+      <td><audio controls preload="none" src="audio/noise_white__24kbps.wav"></audio></td></tr>
+  <tr><td class="name">No quantiser</td>
+      <td><audio controls preload="none" src="audio/noise_white__unquantised.wav"></audio></td></tr>
+</table>
+
+</body>
+</html>
